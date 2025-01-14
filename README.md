@@ -19,11 +19,26 @@ source venv/bin/activate  # For Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Copy and configure settings:
+4. Create required directories:
+```bash
+mkdir uploads cache logs
+```
+
+5. Copy and configure settings:
 ```bash
 cp config.sample.py config.py
 ```
 Edit `config.py` to set your API key and other configurations.
+
+The directory structure should look like this:
+```
+MarkItDownServer/
+├── main.py
+├── config.py
+├── requirements.txt
+├── uploads/        # For temporary file uploads
+├── cache/         # For caching converted files
+└── logs/          # For log files
 
 ## Usage
 1. Start the server:
@@ -78,11 +93,26 @@ source venv/bin/activate  # Windowsの場合: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. 設定をコピーして構成します：
+4. 必要なディレクトリを作成します：
+```bash
+mkdir uploads cache logs
+```
+
+5. 設定をコピーして構成します：
 ```bash
 cp config.sample.py config.py
 ```
 `config.py`を編集してAPIキーやその他の設定を行います。
+
+ディレクトリ構造は以下のようになります：
+```
+MarkItDownServer/
+├── main.py
+├── config.py
+├── requirements.txt
+├── uploads/        # 一時的なファイルアップロード用
+├── cache/         # 変換済みファイルのキャッシュ用
+└── logs/          # ログファイル用
 
 ## 使い方
 1. サーバーを起動します：
