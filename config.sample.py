@@ -19,7 +19,8 @@ KEEP_UPLOADED_FILES = True  # デフォルトでファイルを保持
 ALLOWED_EXTENSIONS = {
     'doc', 'docx', 'pdf', 'txt', 'rtf',
     'odt', 'ods', 'odp', 'odg', 'odf',
-    'htm', 'html', 'xml'
+    'htm', 'html', 'xml', 'ppt', 'pptx',
+    'xls', 'xlsx'
 }
 
 # ロギング設定
